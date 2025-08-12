@@ -1,0 +1,97 @@
+[
+  {
+    "id": "yakub-kolas",
+    "name": "Якуб Колас",
+    "slug": "yakub-kolas",
+    "birthYear": 1882,
+    "deathYear": 1956,
+    "exilePeriods": [
+      { "startYear": 1908, "endYear": 1911, "locations": ["Варшава", "Вільня"] }
+    ],
+    "livedIn": ["Польшча", "Літва"],
+    "activitiesInExile": "Пісаў, працаваў настаўнікам і публікаваў творы.",
+    "reasonForExile": "Палітычны ціск і рэпрэсіі царскіх уладаў.",
+    "returned": true,
+    "outcome": "Вярнуўся ў Беларусь, стаў народным пісьменьнікам, клясык літаратуры.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%AF%D0%BA%D1%83%D0%B1_%D0%9A%D0%BE%D0%BB%D0%B0%D1%81"
+    ]
+  },
+  {
+    "id": "ignacy-domeyko",
+    "name": "Ігнацы Дамейка",
+    "slug": "ignacy-domeyko",
+    "birthYear": 1802,
+    "deathYear": 1889,
+    "exilePeriods": [
+      { "startYear": 1831, "endYear": 1838, "locations": ["Парыж"] },
+      { "startYear": 1838, "endYear": 1884, "locations": ["Сант'яга дэ Чылі", "Ла-Серэна"] }
+    ],
+    "livedIn": ["Францыя", "Чылі"],
+    "activitiesInExile": "Геолаг, педагог, рэктар Чылійскага ўніверсітэта.",
+    "reasonForExile": "Пасьля паўстаньня 1830–1831 супраць Расійскай імперыі.",
+    "returned": false,
+    "outcome": "Не вярнуўся, пахаваны ў Чылі (пазьней парэшткі перапахаваны ў Вільні).",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%86%D0%B3%D0%BD%D0%B0%D1%86%D1%8B_%D0%94%D0%B0%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0"
+    ]
+  },
+  {
+    "id": "marc-chagall",
+    "name": "Марк Шагал",
+    "slug": "marc-chagall",
+    "birthYear": 1887,
+    "deathYear": 1985,
+    "exilePeriods": [
+      { "startYear": 1922, "endYear": 1941, "locations": ["Парыж"] },
+      { "startYear": 1941, "endYear": 1948, "locations": ["Нью-Ёрк"] },
+      { "startYear": 1948, "endYear": 1985, "locations": ["Парыж", "Сен-Поль-дэ-Ванс"] }
+    ],
+    "livedIn": ["Францыя", "ЗША"],
+    "activitiesInExile": "Мастак сусьветнага ўзроўню, жывапіс, вітражы, ілюстрацыі.",
+    "reasonForExile": "Антысеміцкія пераследы і войны; пошук творчых магчымасцяў.",
+    "returned": false,
+    "outcome": "Не вярнуўся; міжнароднае прызнанне, музеі і спадчына па ўсім сьвеце.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%BA_%D0%A8%D0%B0%D0%B3%D0%B0%D0%BB"
+    ]
+  },
+  {
+    "id": "chaim-soutine",
+    "name": "Хаім Суцін",
+    "slug": "chaim-soutine",
+    "birthYear": 1893,
+    "deathYear": 1943,
+    "exilePeriods": [
+      { "startYear": 1913, "endYear": 1943, "locations": ["Парыж", "Туры"] }
+    ],
+    "livedIn": ["Францыя"],
+    "activitiesInExile": "Жывапісец, прадстаўнік парыскай школы.",
+    "reasonForExile": "Навучанне і праца ў мастацтве, пазьней — уцёкі ад пераследу падчас вайны.",
+    "returned": false,
+    "outcome": "Не вярнуўся; памёр у Францыі ў 1943 годзе.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%A5%D0%B0%D1%96%D0%BC_%D0%A1%D1%83%D1%86%D1%96%D0%BD"
+    ]
+  },
+  {
+    "id": "vasil-bykau",
+    "name": "Васіль Быкаў",
+    "slug": "vasil-bykau",
+    "birthYear": 1924,
+    "deathYear": 2003,
+    "exilePeriods": [
+      { "startYear": 1998, "endYear": 2003, "locations": ["Фінляндыя", "Нямеччына", "Чэхія"] }
+    ],
+    "livedIn": ["Фінляндыя", "Нямеччына", "Чэхія"],
+    "activitiesInExile": "Пісьменьнік, эсэіст, працаваў над мемуарамі і публіцыстыкай.",
+    "reasonForExile": "Палітычны ціск у Беларусі ў канцы 1990-х.",
+    "returned": true,
+    "outcome": "Вярнуўся ў Беларусь; памёр у Мінску ў 2003.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%92%D0%B0%D1%81%D1%96%D0%BB%D1%8C_%D0%91%D1%8B%D0%BA%D0%B0%D1%9E"
+    ]
+  }
+]
+
+
