@@ -1,0 +1,246 @@
+[
+  {
+    "id": "svjatlana-cikhanouskaja",
+    "name": "Святлана Ціханоўская",
+    "slug": "svjatlana-cikhanouskaja",
+    "portraitEmoji": "🕊️",
+    "startYear": 2020,
+    "endYear": null,
+    "returned": false,
+    "blurb": "У вымушанай эміграцыі з 2020 году; прадстаўляе дэмакратычныя сілы Беларусі.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%A1%D0%B2%D1%8F%D1%82%D0%BB%D0%B0%D0%BD%D0%B0_%D0%A6%D1%96%D1%85%D0%B0%D0%BD%D0%BE%D1%9E%D1%81%D0%BA%D0%B0%D1%8F"
+  },
+  {
+    "id": "pavel-latushka",
+    "name": "Павал Латушка",
+    "slug": "pavel-latushka",
+    "portraitEmoji": "🏛️",
+    "startYear": 2020,
+    "endYear": null,
+    "returned": false,
+    "blurb": "З 2020 у эміграцыі, Нацыянальны антыкрызісны ўпраўляючы.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%9F%D0%B0%D0%B2%D0%B0%D0%BB_%D0%9B%D0%B0%D1%82%D1%83%D1%88%D0%BA%D0%B0"
+  },
+  {
+    "id": "valeryj-cepkala",
+    "name": "Валерый Цэпкала",
+    "slug": "valeryj-cepkala",
+    "portraitEmoji": "🛰️",
+    "startYear": 2020,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Адзін з лідараў кампаніі 2020, з таго часу за мяжой.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%8B%D0%B9_%D0%A6%D1%8D%D0%BF%D0%BA%D0%B0%D0%BB%D0%B0"
+  },
+  {
+    "id": "andrej-sannikau",
+    "name": "Андрэй Саньнікаў",
+    "slug": "andrej-sannikau",
+    "portraitEmoji": "🕯️",
+    "startYear": 2012,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Пасьля рэпрэсій 2010—2011 гадоў жыве ў эміграцыі.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D1%8D%D0%B9_%D0%A1%D0%B0%D0%BD%D1%8C%D0%BD%D1%96%D0%BA%D0%B0%D1%9E"
+  },
+  {
+    "id": "siarhei-michalok",
+    "name": "Сяргей Міхалок",
+    "slug": "siarhei-michalok",
+    "portraitEmoji": "🎤",
+    "startYear": 2011,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Лідар гурта, зь 2011 года жыве за межамі Беларусі.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%A1%D1%8F%D1%80%D0%B3%D0%B5%D0%B9_%D0%9C%D1%96%D1%85%D0%B0%D0%BB%D0%BE%D0%BA"
+  },
+  {
+    "id": "lavon-volski",
+    "name": "Лявон Вольскі",
+    "slug": "lavon-volski",
+    "portraitEmoji": "🎸",
+    "startYear": 2014,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Музыка і паэт, значную частку апошніх гадоў праводзіць па-за Беларуссю.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%9B%D1%8F%D0%B2%D0%BE%D0%BD_%D0%92%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D1%96"
+  },
+  {
+    "id": "alhierd-bakharevich",
+    "name": "Аляхнед Бахарэвіч",
+    "slug": "alhierd-bakharevich",
+    "portraitEmoji": "✍️",
+    "startYear": 2020,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Пісьменьнік, у эміграцыі пасьля падзей 2020.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%90%D0%BB%D0%B5%D0%B3%D0%B1%D0%B0_%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%BA%D0%B0%D0%B9_%D0%BC%D0%BE%D0%B2%D1%8B?redirect=no"
+  },
+  {
+    "id": "sasha-filipienka",
+    "name": "Саша Філіпенка",
+    "slug": "sasha-filipienka",
+    "portraitEmoji": "🖋️",
+    "startYear": 2020,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Пісьменьнік, вымушаны жыць па-за Беларуссю пасьля 2020.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%A1%D0%B0%D1%88%D0%B0_%D0%A4%D1%96%D0%BB%D1%96%D0%BF%D0%B5%D0%BD%D0%BA%D0%B0"
+  },
+  {
+    "id": "volha-hapeeva",
+    "name": "Вольга Гапеева",
+    "slug": "volha-hapeeva",
+    "portraitEmoji": "📚",
+    "startYear": 2019,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Паэтка і пісьменьніца, апошнія гады жыве ў Нямеччыне.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D1%8C%D0%B3%D0%B0_%D0%93%D0%B0%D0%BF%D0%B5%D0%B5%D0%B2%D0%B0"
+  },
+  {
+    "id": "andrei-kureichyk",
+    "name": "Андрэй Курэйчык",
+    "slug": "andrei-kureichyk",
+    "portraitEmoji": "🎭",
+    "startYear": 2020,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Драматург і рэжысёр, у эміграцыі пасьля 2020.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D1%8D%D0%B9_%D0%9A%D1%83%D1%80%D1%8D%D0%B9%D1%87%D1%8B%D0%BA"
+  },
+  {
+    "id": "hanna-komar",
+    "name": "Ганна Комар",
+    "slug": "hanna-komar",
+    "portraitEmoji": "📝",
+    "startYear": 2020,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Паэтка, з 2020 жыве ў эміграцыі.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%93%D0%B0%D0%BD%D0%BD%D0%B0_%D0%9A%D0%BE%D0%BC%D0%B0%D1%80"
+  },
+  {
+    "id": "ivonka-survilla",
+    "name": "Івонка Сурвілла",
+    "slug": "ivonka-survilla",
+    "portraitEmoji": "🇧🇾",
+    "startYear": 1950,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Старшыня Рады БНР у выгнаньні; з юнацтва ў эміграцыі (Канада).",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%86%D0%B2%D0%BE%D0%BD%D0%BA%D0%B0_%D0%A1%D1%83%D1%80%D0%B2%D1%96%D0%BB%D0%B0"
+  },
+  {
+    "id": "mikola-abramchyk",
+    "name": "Мікола Абрамчык",
+    "slug": "mikola-abramchyk",
+    "portraitEmoji": "🌍",
+    "startYear": 1937,
+    "endYear": 1970,
+    "returned": false,
+    "blurb": "Дзейчык эміграцыі, старшыня Рады БНР (Парыж).",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%9C%D1%96%D0%BA%D0%BE%D0%BB%D0%B0_%D0%90%D0%B1%D1%80%D0%B0%D0%BC%D1%87%D1%8B%D0%BA"
+  },
+  {
+    "id": "vasil-zacharka",
+    "name": "Васіль Захарка",
+    "slug": "vasil-zacharka",
+    "portraitEmoji": "🏛️",
+    "startYear": 1920,
+    "endYear": 1943,
+    "returned": false,
+    "blurb": "Кіраўнік ураду БНР у выгнаньні, жыў у Чэхаславаччыне і Нямеччыне.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%92%D0%B0%D1%81%D1%96%D0%BB%D1%8C_%D0%97%D0%B0%D1%85%D0%B0%D1%80%D0%BA%D0%B0"
+  },
+  {
+    "id": "jazep-serad",
+    "name": "Язэп Серада",
+    "slug": "jazep-serad",
+    "portraitEmoji": "📜",
+    "startYear": 1919,
+    "endYear": 1927,
+    "returned": true,
+    "blurb": "Дзейчык БНР, жыў у Літве, вярнуўся ў БССР і быў рэпрэсаваны.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%AF%D0%B7%D1%8D%D0%BF_%D0%A1%D0%B5%D1%80%D0%B0%D0%B4%D0%B0"
+  },
+  {
+    "id": "ignacy-domeyko",
+    "name": "Ігнацы Дамейка",
+    "slug": "ignacy-domeyko",
+    "portraitEmoji": "⛏️",
+    "startYear": 1831,
+    "endYear": 1884,
+    "returned": false,
+    "blurb": "Пасьля паўстаньня 1830—1831 эміграваў у Чылі, дзе стаў рэктарам універсітэта.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%86%D0%B3%D0%BD%D0%B0%D1%86%D1%8B_%D0%94%D0%B0%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0"
+  },
+  {
+    "id": "marc-chagall",
+    "name": "Марк Шагал",
+    "slug": "marc-chagall",
+    "portraitEmoji": "🎨",
+    "startYear": 1922,
+    "endYear": 1985,
+    "returned": false,
+    "blurb": "Нарадзіўся ў Віцебску, з 1922 за мяжой; сусьветна вядомы мастак.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%BA_%D0%A8%D0%B0%D0%B3%D0%B0%D0%BB"
+  },
+  {
+    "id": "chaim-soutine",
+    "name": "Хаім Суцін",
+    "slug": "chaim-soutine",
+    "portraitEmoji": "🖼️",
+    "startYear": 1913,
+    "endYear": 1943,
+    "returned": false,
+    "blurb": "Зь Смілавічаў, з 1913 у Францыі; класік жывапісу ХХ стагодзьдзя.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%A5%D0%B0%D1%96%D0%BC_%D0%A1%D1%83%D1%86%D1%96%D0%BD"
+  },
+  {
+    "id": "olga-korbut",
+    "name": "Вольга Карбут",
+    "slug": "olga-korbut",
+    "portraitEmoji": "🤸",
+    "startYear": 1991,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Легендарная гімнастка, з пачатку 1990-х жыве ў ЗША.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D1%8C%D0%B3%D0%B0_%D0%9A%D0%B0%D1%80%D0%B1%D1%83%D1%82"
+  },
+  {
+    "id": "victoria-azarenka",
+    "name": "Вікторыя Азаранка",
+    "slug": "victoria-azarenka",
+    "portraitEmoji": "🎾",
+    "startYear": 2005,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Тэнісістка, доўгая спартовая карʼера і пражываньне ў ЗША.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%8B%D1%8F_%D0%90%D0%B7%D0%B0%D1%80%D0%B0%D0%BD%D0%BA%D0%B0"
+  },
+  {
+    "id": "andrei-arlovski",
+    "name": "Андрэй Арлоўскі",
+    "slug": "andrei-arlovski",
+    "portraitEmoji": "🥊",
+    "startYear": 2000,
+    "endYear": null,
+    "returned": false,
+    "blurb": "Баявое ММА; шмат гадоў базуецца ў ЗША.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%90%D0%BD%D0%B4%D1%80%D1%8D%D0%B9_%D0%90%D1%80%D0%BB%D0%BE%D1%9E%D1%81%D0%BA%D1%96"
+  },
+  {
+    "id": "vasil-bykau",
+    "name": "Васіль Быкаў",
+    "slug": "vasil-bykau",
+    "portraitEmoji": "📖",
+    "startYear": 1998,
+    "endYear": 2003,
+    "returned": true,
+    "blurb": "Жыў у эміграцыі напрыканцы 1990-х — пачатку 2000-х; вярнуўся і памёр у Мінску.",
+    "sourceUrl": "https://be.wikipedia.org/wiki/%D0%92%D0%B0%D1%81%D1%96%D0%BB%D1%8C_%D0%91%D1%8B%D0%BA%D0%B0%D1%9E"
+  }
+]
+
+
