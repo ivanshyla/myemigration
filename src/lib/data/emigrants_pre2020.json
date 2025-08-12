@@ -91,6 +91,122 @@
     "sourceUrls": [
       "https://be.wikipedia.org/wiki/%D0%92%D0%B0%D1%81%D1%96%D0%BB%D1%8C_%D0%91%D1%8B%D0%BA%D0%B0%D1%9E"
     ]
+  },
+  {
+    "id": "tadeusz-kosciuszko",
+    "name": "Тадэвуш Касьцюшка",
+    "slug": "tadeusz-kosciuszko",
+    "birthYear": 1746,
+    "deathYear": 1817,
+    "exilePeriods": [
+      { "startYear": 1796, "endYear": 1798, "locations": ["Філадэльфія"] },
+      { "startYear": 1798, "endYear": 1815, "locations": ["Парыж"] },
+      { "startYear": 1815, "endYear": 1817, "locations": ["Салюр", "Швейцарыя"] }
+    ],
+    "livedIn": ["ЗША", "Францыя", "Швейцарыя"],
+    "activitiesInExile": "Вайсковы і палітычны дзеяч; удзел у міжнароднай палітыцы, перапіска, грамадская дзейнасьць.",
+    "reasonForExile": "Параза паўстаньня 1794 і палітычныя наступствы.",
+    "returned": false,
+    "outcome": "Не вярнуўся; памёр у Швейцарыі ў 1817 годзе.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B4%D1%8D%D0%B2%D1%83%D1%88_%D0%9A%D0%B0%D1%81%D1%8C%D1%86%D1%8E%D1%88%D0%BA%D0%B0"
+    ],
+    "tags": ["political", "war"]
+  },
+  {
+    "id": "kastus-kalinouski",
+    "name": "Кастусь Каліноўскі",
+    "slug": "kastus-kalinouski",
+    "birthYear": 1838,
+    "deathYear": 1864,
+    "exilePeriods": [
+      { "startYear": 1860, "endYear": 1862, "locations": ["Санкт-Пецярбург"] }
+    ],
+    "livedIn": ["Расія"],
+    "activitiesInExile": "Навучаньне ў ВНУ, інтэлектуальнае і палітычнае станаўленьне.",
+    "reasonForExile": "Навучаньне (ня вымушаная эміграцыя).",
+    "returned": true,
+    "outcome": "Вярнуўся ў Вільню; кіраўніцтва паўстаньнем, арыштаваны і пакараны сьмерцю ў 1864.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%9A%D0%B0%D1%81%D1%82%D1%83%D1%81%D1%8C_%D0%9A%D0%B0%D0%BB%D1%96%D0%BD%D0%BE%D1%9E%D1%81%D0%BA%D1%96"
+    ],
+    "tags": ["study", "political"]
+  },
+  {
+    "id": "janka-kupala",
+    "name": "Янка Купала",
+    "slug": "janka-kupala",
+    "birthYear": 1882,
+    "deathYear": 1942,
+    "exilePeriods": [
+      { "startYear": 1909, "endYear": 1913, "locations": ["Санкт-Пецярбург"] },
+      { "startYear": 1941, "endYear": 1942, "locations": ["Масква"] }
+    ],
+    "livedIn": ["Расія"],
+    "activitiesInExile": "Навучаньне і літаратурная праца; пазьней — эвакуацыя падчас вайны.",
+    "reasonForExile": "Навучаньне; пазьней — вайна і эвакуацыя.",
+    "returned": false,
+    "outcome": "Падчас эвакуацыі не вярнуўся; памёр у Маскве ў 1942 годзе.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%AF%D0%BD%D0%BA%D0%B0_%D0%9A%D1%83%D0%BF%D0%B0%D0%BB%D0%B0"
+    ],
+    "tags": ["study", "war", "culture"]
+  },
+  {
+    "id": "maksim-mirnyi",
+    "name": "Максім Мірны",
+    "slug": "maksim-mirnyi",
+    "birthYear": 1977,
+    "exilePeriods": [
+      { "startYear": 1996, "endYear": 2018, "locations": ["Фларыда", "ЗША"] }
+    ],
+    "livedIn": ["ЗША"],
+    "activitiesInExile": "Прафесійны тэніс, шматразовы чэмпіён Турніраў Вялікага шлема ў пары.",
+    "reasonForExile": "Спартовая карʼера і трэніровачная база.",
+    "returned": true,
+    "outcome": "Пасьля карʼеры працаваў з зборнай Беларусі; часта ў Мінску.
+",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BA%D1%81%D1%96%D0%BC_%D0%9C%D1%96%D1%80%D0%BD%D1%8B"
+    ],
+    "tags": ["sports"]
+  },
+  {
+    "id": "uladzimir-samsonau",
+    "name": "Уладзімір Самсонаў",
+    "slug": "uladzimir-samsonau",
+    "birthYear": 1976,
+    "exilePeriods": [
+      { "startYear": 1994, "endYear": 2019, "locations": ["Дусэльдорф", "Германія"] }
+    ],
+    "livedIn": ["Германія"],
+    "activitiesInExile": "Настольны тэніс: клюбная і міжнародная карʼера.",
+    "reasonForExile": "Спартовая карʼера і кантракты за мяжой.",
+    "returned": false,
+    "outcome": "Доўгая рэзідэнцыя ў Еўропе; адна з галоўных постацяў беларускага настольнага тэнісу.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%A3%D0%BB%D0%B0%D0%B4%D0%B7%D1%96%D0%BC%D1%96%D1%80_%D0%A1%D0%B0%D0%BC%D1%81%D0%BE%D0%BD%D0%B0%D1%9E"
+    ],
+    "tags": ["sports"]
+  },
+  {
+    "id": "aliaksandr-hleb",
+    "name": "Аляксандр Глеб",
+    "slug": "aliaksandr-hleb",
+    "birthYear": 1981,
+    "exilePeriods": [
+      { "startYear": 2000, "endYear": 2014, "locations": ["Штутгарт", "Лондан", "Барсэлона"] },
+      { "startYear": 2016, "endYear": 2018, "locations": ["Менск"] }
+    ],
+    "livedIn": ["Германія", "Вялікабрытанія", "Іспанія", "Беларусь"],
+    "activitiesInExile": "Прафесійны футбол у клубах Еўропы (Штутгарт, Арсэнал, Барсэлона і інш.).",
+    "reasonForExile": "Спартовая карʼера і кантракты за мяжой.",
+    "returned": true,
+    "outcome": "Вярнуўся і завяршыў карʼеру ў БАТЭ; жыве паміж Беларусьсю і Еўропай.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%90%D0%BB%D1%8F%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%93%D0%BB%D0%B5%D0%B1"
+    ],
+    "tags": ["sports"]
   }
 ]
 

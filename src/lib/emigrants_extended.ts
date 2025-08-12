@@ -17,6 +17,7 @@ export type ExtendedEmigrantProfile = {
   returned: boolean;
   outcome: string; // what happened if returned or if not returned
   sourceUrls: string[];
+  tags?: ("political" | "forced" | "war" | "study" | "sports" | "culture" | "science" | "religious" | "economic")[];
 };
 
 import data from "./data/emigrants_pre2020.json";
