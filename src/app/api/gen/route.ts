@@ -85,7 +85,12 @@ export async function POST(request: Request) {
       headers: { "content-type": "application/json" },
     });
   }
-  const data: any = await resp.json();
+  type ChatCompletion = {
+    choices?: Array<{
+      message?: { content?: string };
+    }>;
+  };
+  const data = (await resp.json()) as ChatCompletion;
   const text: string = data?.choices?.[0]?.message?.content?.trim() || "";
 
   if (text) CACHE.set(cleanPrompt, { text, at: now });
