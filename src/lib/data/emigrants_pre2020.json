@@ -164,8 +164,7 @@
     "activitiesInExile": "Прафесійны тэніс, шматразовы чэмпіён Турніраў Вялікага шлема ў пары.",
     "reasonForExile": "Спартовая карʼера і трэніровачная база.",
     "returned": true,
-    "outcome": "Пасьля карʼеры працаваў з зборнай Беларусі; часта ў Мінску.
-",
+    "outcome": "Пасьля карʼеры працаваў з зборнай Беларусі; часта ў Мінску.",
     "sourceUrls": [
       "https://be.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BA%D1%81%D1%96%D0%BC_%D0%9C%D1%96%D1%80%D0%BD%D1%8B"
     ],
@@ -207,6 +206,819 @@
       "https://be.wikipedia.org/wiki/%D0%90%D0%BB%D1%8F%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%93%D0%BB%D0%B5%D0%B1"
     ],
     "tags": ["sports"]
+  },
+  {
+    "id": "zianon-pazniak",
+    "name": "Зянон Пазьняк",
+    "slug": "zianon-pazniak",
+    "birthYear": 1944,
+    "exilePeriods": [
+      { "startYear": 1996, "endYear": null, "locations": ["ЗША"] }
+    ],
+    "livedIn": ["ЗША"],
+    "activitiesInExile": "Палітычная дзейнасць, публіцыстыка, гістарычныя даследаванні.",
+    "reasonForExile": "Палітычныя пераследы пасля прэзідэнцкіх выбараў 1994 года.",
+    "returned": false,
+    "outcome": "Ведзе палітычную дзейнасць у эміграцыі, пішэ кнігі і артыкулы.",
+    "sourceUrls": [
+      "https://be.wikipedia.org/wiki/%D0%97%D1%8F%D0%BD%D0%BE%D0%BD_%D0%9F%D0%B0%D0%B7%D1%8C%D0%BD%D1%8F%D0%BA"
+    ],
+    "tags": ["political"]
+  },
+  {
+    "id": "andrey-kureichyk",
+    "name": "Андрэй Курейчык",
+    "slug": "andrey-kureichyk",
+    "birthYear": 1978,
+    "exilePeriods": [
+      { "startYear": 2020, "endYear": null, "locations": ["Польшча", "Літва"] }
+    ],
+    "livedIn": ["Польшча", "Літва"],
+    "activitiesInExile": "Драматург, рэжысёр. Пастаноўкі і рэзідэнцыі ў Еўропе.",
+    "reasonForExile": "Палітычная сітуацыя ў Беларусі пасля 2020 года.",
+    "returned": false,
+    "outcome": "Ставіць спектаклі для беларускай дыяспары ў Еўропе.",
+    "sourceUrls": [
+      ""
+    ],
+    "tags": ["culture", "political"]
+  },
+  {
+    "id": "sviatlana-tsikhanouskaya",
+    "name": "Святлана Ціханоўская",
+    "slug": "sviatlana-tsikhanouskaya",
+    "birthYear": 1982,
+    "exilePeriods": [
+      { "startYear": 2020, "endYear": null, "locations": ["Літва", "Польшча", "Бельгія"] }
+    ],
+    "livedIn": ["Літва", "Польшча", "Бельгія"],
+    "activitiesInExile": "Палітычная лідэрка беларускай апазіцыі, дыпламатычная дзейнасць.",
+    "reasonForExile": "Палітычныя пераследы пасля прэзідэнцкіх выбараў 2020 года.",
+    "returned": false,
+    "outcome": "Міжнароднае прызнанне як лідэра дэмакратычнай Беларусі, сустрэчы з сусветнымі лідэрамі.",
+    "sourceUrls": [
+      ""
+    ],
+    "tags": ["political"]
+  },
+  {
+    "id": "viktar-shukielovich",
+    "name": "Віктар Шукеловіч",
+    "slug": "viktar-shukielovich",
+    "birthYear": 1958,
+    "exilePeriods": [
+      { "startYear": 1999, "endYear": null, "locations": ["ЗША", "Еўропа"] }
+    ],
+    "livedIn": ["ЗША", "Еўропа"],
+    "activitiesInExile": "Журналістыка, літаратурная творчасць, тэлевізійная дзейнасць.",
+    "reasonForExile": "Палітычныя пераследы, цэнзура.",
+    "returned": false,
+    "outcome": "Працягвае літаратурную і журналісцкую дзейнасць за мяжой.",
+    "sourceUrls": [""],
+    "tags": ["culture", "political"]
+  },
+  {
+    "id": "sviatlana-kurs", 
+    "name": "Святлана Курс",
+    "slug": "sviatlana-kurs",
+    "birthYear": 1970,
+    "exilePeriods": [
+      { "startYear": 2004, "endYear": null, "locations": ["Літва", "Германія"] }
+    ],
+    "livedIn": ["Літва", "Германія"],
+    "activitiesInExile": "Літаратурная творчасць, пераклады.",
+    "reasonForExile": "Палітычныя пераследы, цэнзура.",
+    "returned": false,
+    "outcome": "Працягвае пісьменніцкую дзейнасць, публікуе кнігі.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "natallia-radzina",
+    "name": "Наталля Радзіна",
+    "slug": "natallia-radzina", 
+    "birthYear": 1974,
+    "exilePeriods": [
+      { "startYear": 2009, "endYear": null, "locations": ["Польшча", "Літва"] }
+    ],
+    "livedIn": ["Польшча", "Літва"],
+    "activitiesInExile": "Кіраванне Хартыяй 97, журналістыка, медыя-дзейнасць.",
+    "reasonForExile": "Палітычныя пераследы, цэнзура медыя.",
+    "returned": false,
+    "outcome": "Працягвае кіраваць незалежнымі медыя, інфармацыйная барацьба.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "andrey-sannikau",
+    "name": "Андрэй Саннікаў",
+    "slug": "andrey-sannikau",
+    "birthYear": 1954,
+    "exilePeriods": [
+      { "startYear": 2010, "endYear": null, "locations": ["Вялікабрытанія", "Польшча"] }
+    ], 
+    "livedIn": ["Вялікабрытанія", "Польшча"],
+    "activitiesInExile": "Палітычная дзейнасць, дыпламатыя, правозащытная работа.",
+    "reasonForExile": "Палітычныя пераследы пасля прэзідэнцкіх выбараў 2010 года.",
+    "returned": false,
+    "outcome": "Працягвае палітычную дзейнасць у эміграцыі, палітычны аналітык.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "anton-lutskievich",
+    "name": "Антон Луцкевіч",
+    "slug": "anton-lutskievich",
+    "birthYear": 1884,
+    "deathYear": 1942,
+    "exilePeriods": [
+      { "startYear": 1919, "endYear": 1942, "locations": ["Вільно (Польшча)"] }
+    ],
+    "livedIn": ["Вільно (Польшча)"],
+    "activitiesInExile": "Палітычная дзейнасць, арганізацыя беларускай эміграцыі.",
+    "reasonForExile": "Падзенне БНР, палітычныя пераследы.",
+    "returned": false,
+    "outcome": "Арэштаваны СССР у 1939 году, памёр у этапіроўцы 23.03.1942 у Аткарску.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "vaclau-lastouski",
+    "name": "Вацлаў Ластоўскі",
+    "slug": "vaclau-lastouski",
+    "birthYear": 1883,
+    "deathYear": 1938,
+    "exilePeriods": [
+      { "startYear": 1920, "endYear": 1927, "locations": ["Коўна/Каунас (Літва)"] }
+    ],
+    "livedIn": ["Коўна/Каунас (Літва)"],
+    "activitiesInExile": "Палітычная дзейнасць, культурная работа, публіцыстыка.",
+    "reasonForExile": "Палітычныя пераследы пасля падзення БНР.",
+    "returned": true,
+    "outcome": "Вярнуўся ў БССР у 1927, арэштаваны ў 1930 і 1937, расстраляны ў Саратове ў 1938.",
+    "sourceUrls": [""],
+    "tags": ["political", "culture"]
+  },
+  {
+    "id": "aliaksandr-tsvikievich",
+    "name": "Аляксандр Цвікевіч",
+    "slug": "aliaksandr-tsvikievich",
+    "birthYear": 1888,
+    "deathYear": 1937,
+    "exilePeriods": [
+      { "startYear": 1920, "endYear": 1925, "locations": ["Берлін", "Прага"] }
+    ],
+    "livedIn": ["Берлін", "Прага"],
+    "activitiesInExile": "Палітычная дзейнасць, дыпламатыя, навуковая работа.",
+    "reasonForExile": "Палітычныя пераследы пасля падзення БНР.",
+    "returned": true,
+    "outcome": "Вярнуўся ў БССР у 1925, арэштаваны ў 1930 і 1937, расстраляны 30.12.1937.",
+    "sourceUrls": [""],
+    "tags": ["political", "science"]
+  },
+  {
+    "id": "arkadz-smolich",
+    "name": "Аркадзь Смоліч",
+    "slug": "arkadz-smolich",
+    "birthYear": 1891,
+    "deathYear": 1938,
+    "exilePeriods": [
+      { "startYear": 1921, "endYear": 1922, "locations": ["Вільно (Польшча)"] }
+    ],
+    "livedIn": ["Вільно (Польшча)"],
+    "activitiesInExile": "Палітычная дзейнасць, літаратурная творчасць.",
+    "reasonForExile": "Палітычныя пераследы пасля падзення БНР.",
+    "returned": true,
+    "outcome": "Вярнуўся ў БССР у 1922, арэштаваны ў 1930 і 1937, расстраляны ў Омску 17.06.1938.",
+    "sourceUrls": [""],
+    "tags": ["political", "culture"]
+  },
+  {
+    "id": "piotra-krecheuski",
+    "name": "Пётра Крэчэўскі",
+    "slug": "piotra-krecheuski",
+    "birthYear": 1864,
+    "deathYear": 1928,
+    "exilePeriods": [
+      { "startYear": 1919, "endYear": 1928, "locations": ["Прага (Чэхаславакія)"] }
+    ],
+    "livedIn": ["Прага (Чэхаславакія)"],
+    "activitiesInExile": "Кіраванне Радой БНР у выгнанні, палітычная дзейнасць.",
+    "reasonForExile": "Падзенне БНР, неабходнасць працягваць палітычную барацьбу.",
+    "returned": false,
+    "outcome": "Памёр у Празе 08.03.1928.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "vasil-zakharka",
+    "name": "Васіль Захарка",
+    "slug": "vasil-zakharka",
+    "birthYear": 1877,
+    "deathYear": 1943,
+    "exilePeriods": [
+      { "startYear": 1920, "endYear": 1943, "locations": ["Прага (Чэхаславакія)"] }
+    ],
+    "livedIn": ["Прага (Чэхаславакія)"],
+    "activitiesInExile": "Кіраванне Радой БНР у выгнанні, палітычная дзейнасць.",
+    "reasonForExile": "Падзенне БНР, неабходнасць працягваць палітычную барацьбу.",
+    "returned": false,
+    "outcome": "Памёр у Празе 14.03.1943.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "mikola-abramchyk",
+    "name": "Мікола Абрамчык",
+    "slug": "mikola-abramchyk",
+    "birthYear": 1903,
+    "deathYear": 1970,
+    "exilePeriods": [
+      { "startYear": 1923, "endYear": 1970, "locations": ["Прага", "Парыж"] }
+    ],
+    "livedIn": ["Прага", "Парыж"],
+    "activitiesInExile": "Кіраванне Радай БНР у выгнанні, дыпламатычная дзейнасць.",
+    "reasonForExile": "Палітычныя пераследы, неабходнасць працягваць барацьбу за незалежнасць.",
+    "returned": false,
+    "outcome": "Памёр у Парыжы ў маі 1970 года.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "vintsent-zhuk-gryshkievich",
+    "name": "Вінцэнт Жук-Грышкевіч",
+    "slug": "vintsent-zhuk-gryshkievich",
+    "birthYear": 1920,
+    "deathYear": 1989,
+    "exilePeriods": [
+      { "startYear": 1950, "endYear": 1989, "locations": ["Брытанія", "Германія", "Канада"] }
+    ],
+    "livedIn": ["Брытанія", "Германія", "Канада"],
+    "activitiesInExile": "Кіраванне Радай БНР у выгнанні, беларуская дыяспарная дзейнасць.",
+    "reasonForExile": "Падзенне БНР, Другая сусветная вайна, палітычныя пераследы.",
+    "returned": false,
+    "outcome": "Памёр у Антарыё, Канада, 14.02.1989.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "yazep-sazhych",
+    "name": "Язэп Сажыч",
+    "slug": "yazep-sazhych",
+    "birthYear": 1929,
+    "deathYear": 2007,
+    "exilePeriods": [
+      { "startYear": 1950, "endYear": 2007, "locations": ["ЗША"] }
+    ],
+    "livedIn": ["ЗША"],
+    "activitiesInExile": "Кіраванне Радай БНР у выгнанні, беларуская дыяспарная дзейнасць.",
+    "reasonForExile": "Падзенне БНР, палітычныя пераследы пасля Другой сусветнай вайны.",
+    "returned": false,
+    "outcome": "Памёр у Дэтройце 19.11.2007.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "yazep-varonka",
+    "name": "Язэп Варонка",
+    "slug": "yazep-varonka",
+    "birthYear": 1888,
+    "deathYear": 1952,
+    "exilePeriods": [
+      { "startYear": 1923, "endYear": 1952, "locations": ["ЗША (Чыкага)"] }
+    ],
+    "livedIn": ["ЗША (Чыкага)"],
+    "activitiesInExile": "Беларуская дыяспарная дзейнасць, культурная работа.",
+    "reasonForExile": "Падзенне БНР, неабходнасць працягваць беларускую справу.",
+    "returned": false,
+    "outcome": "Памёр у Чыкага 04.06.1952.",
+    "sourceUrls": [""],
+    "tags": ["political", "culture"]
+  },
+  {
+    "id": "kastus-ezavitau",
+    "name": "Кастусь Езавітаў",
+    "slug": "kastus-ezavitau",
+    "birthYear": 1893,
+    "deathYear": 1946,
+    "exilePeriods": [
+      { "startYear": 1921, "endYear": 1944, "locations": ["Латвія (Даўгаўпілс, Рыга)"] }
+    ],
+    "livedIn": ["Латвія (Даўгаўпілс, Рыга)"],
+    "activitiesInExile": "Ваенная дзейнасць, арганізацыя беларускіх воінскіх фармацый.",
+    "reasonForExile": "Падзенне БНР, ваенныя дзеянні.",
+    "returned": true,
+    "outcome": "Вярнуўся ў 1944 як дзеяч БЦР, схоплены СМЕРШ, казнёны ў Мінску 23.05.1946.",
+    "sourceUrls": [""],
+    "tags": ["political", "war"]
+  },
+  {
+    "id": "klaudziy-duzh-dusheuski",
+    "name": "Клаўдзій Дуж-Душэўскі",
+    "slug": "klaudziy-duzh-dusheuski",
+    "birthYear": 1891,
+    "deathYear": 1959,
+    "exilePeriods": [
+      { "startYear": 1921, "endYear": 1959, "locations": ["Літва (Каунас, Вільнюс)"] }
+    ],
+    "livedIn": ["Літва (Каунас, Вільнюс)"],
+    "activitiesInExile": "Дыпламатычная дзейнасць, культурная работа, стварэнне беларускай сімволікі.",
+    "reasonForExile": "Падзенне БНР, палітычныя пераследы.",
+    "returned": false,
+    "outcome": "Арэштоўваўся ў 1940 і 1952, памёр у Вільнюсе 25.02.1959.",
+    "sourceUrls": [""],
+    "tags": ["political", "culture"]
+  },
+  {
+    "id": "radaslau-astrouski",
+    "name": "Радаслаў Астроўскі",
+    "slug": "radaslau-astrouski",
+    "birthYear": 1887,
+    "deathYear": 1976,
+    "exilePeriods": [
+      { "startYear": 1945, "endYear": 1976, "locations": ["Германія", "ЗША (Кліўленд)"] }
+    ],
+    "livedIn": ["Германія", "ЗША (Кліўленд)"],
+    "activitiesInExile": "Кіраванне беларускай эміграцыяй, палітычная дзейнасць.",
+    "reasonForExile": "Падзенне БЦР пасля Другой сусветнай вайны.",
+    "returned": false,
+    "outcome": "Памёр у Кліўлендзе, ЗША, у 1976 годзе.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "kazimir-shchors",
+    "name": "Казімір Шчорс",
+    "slug": "kazimir-shchors",
+    "birthYear": 1908,
+    "deathYear": 1995,
+    "exilePeriods": [
+      { "startYear": 1945, "endYear": 1995, "locations": ["ЗША (Нью-Джэрсі)"] }
+    ],
+    "livedIn": ["ЗША (Нью-Джэрсі)"],
+    "activitiesInExile": "Журналістыка, дзейнасць у БЦР, беларуская дыяспарная работа.",
+    "reasonForExile": "Падзенне БЦР пасля Другой сусветнай вайны.",
+    "returned": false,
+    "outcome": "Памёр у эміграцыі ў ЗША ў 1995 годзе.",
+    "sourceUrls": [""],
+    "tags": ["political", "culture"]
+  },
+  {
+    "id": "yanka-zaprudnik",
+    "name": "Янка Запруднік",
+    "slug": "yanka-zaprudnik",
+    "birthYear": 1926,
+    "deathYear": 2021,
+    "exilePeriods": [
+      { "startYear": 1950, "endYear": 2021, "locations": ["ЗША (Нью-Джэрсі, Нью-Ёрк)"] }
+    ],
+    "livedIn": ["ЗША (Нью-Джэрсі, Нью-Ёрк)"],
+    "activitiesInExile": "Гістарычныя даследаванні, журналістыка ў 'Радыё Свабода', беларуская дыяспарная дзейнасць.",
+    "reasonForExile": "Палітычныя абставіны пасля Другой сусветнай вайны.",
+    "returned": false,
+    "outcome": "Памёр у ЗША ў 2021 годзе.",
+    "sourceUrls": [""],
+    "tags": ["culture", "science"]
+  },
+  {
+    "id": "mikhas-kavyl",
+    "name": "Міхась Кавыль",
+    "slug": "mikhas-kavyl",
+    "birthYear": 1911,
+    "deathYear": 1980,
+    "exilePeriods": [
+      { "startYear": 1945, "endYear": 1980, "locations": ["ЗША"] }
+    ],
+    "livedIn": ["ЗША"],
+    "activitiesInExile": "Публіцыстыка, арганізацыя беларускіх школаў у эміграцыі, адукацыйная дзейнасць.",
+    "reasonForExile": "Палітычныя абставіны пасля Другой сусветнай вайны.",
+    "returned": false,
+    "outcome": "Памёр у ЗША ў 1980-я гады.",
+    "sourceUrls": [""],
+    "tags": ["culture", "study"]
+  },
+  {
+    "id": "mikhas-mitskievich",
+    "name": "Міхась Міцкевіч (Ластоўскі)",
+    "slug": "mikhas-mitskievich",
+    "birthYear": 1907,
+    "deathYear": 1990,
+    "exilePeriods": [
+      { "startYear": 1945, "endYear": 1990, "locations": ["ЗША"] }
+    ],
+    "livedIn": ["ЗША"],
+    "activitiesInExile": "Публіцыстыка, паэзія, беларуская дыяспарная дзейнасць.",
+    "reasonForExile": "Палітычныя абставіны, як сын Вацлава Ластоўскага.",
+    "returned": false,
+    "outcome": "Памёр у беларускай дыяспары ў ЗША ў 1990-я гады.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "yan-stankievich",
+    "name": "Ян Станкевіч",
+    "slug": "yan-stankievich",
+    "birthYear": 1891,
+    "deathYear": 1976,
+    "exilePeriods": [
+      { "startYear": 1945, "endYear": 1976, "locations": ["ЗША (Чыкага)"] }
+    ],
+    "livedIn": ["ЗША (Чыкага)"],
+    "activitiesInExile": "Філалагічныя даследаванні, палітычная дзейнасць, беларуская дыяспарная работа.",
+    "reasonForExile": "Палітычныя абставіны пасля Другой сусветнай вайны.",
+    "returned": false,
+    "outcome": "Памёр у Чыкага ў 1976 годзе.",
+    "sourceUrls": [""],
+    "tags": ["political", "science"]
+  },
+  {
+    "id": "nadzeya-abramchyk",
+    "name": "Надзея Абрамчык",
+    "slug": "nadzeya-abramchyk",
+    "birthYear": 1910,
+    "deathYear": 1990,
+    "exilePeriods": [
+      { "startYear": 1945, "endYear": 1990, "locations": ["Францыя"] }
+    ],
+    "livedIn": ["Францыя"],
+    "activitiesInExile": "Арганізацыя беларускай эміграцыі, культурная дзейнасць, падтрымка палітычнай работы мужа.",
+    "reasonForExile": "Палітычныя абставіны, эміграцыя разам з мужам Міколам Абрамчыкам.",
+    "returned": false,
+    "outcome": "Памерла ў Францыі ў 1990-я гады.",
+    "sourceUrls": [""],
+    "tags": ["political", "culture"]
+  },
+  {
+    "id": "siarhey-khmara",
+    "name": "Сяргей Хмара",
+    "slug": "siarhey-khmara",
+    "birthYear": 1939,
+    "deathYear": 2021,
+    "exilePeriods": [
+      { "startYear": 1970, "endYear": 2021, "locations": ["ЗША (Нью-Джэрсі)"] }
+    ],
+    "livedIn": ["ЗША (Нью-Джэрсі)"],
+    "activitiesInExile": "Публіцыстыка, перакладчыцкая дзейнасць, беларуская дыяспарная работа.",
+    "reasonForExile": "Удзел у падпольных беларускіх гуртках у БССР у 1960-я, палітычныя пераследы.",
+    "returned": false,
+    "outcome": "Жыў у беларускай дыяспары ў Нью-Джэрсі, памёр у эміграцыі ў 2021 годзе.",
+    "sourceUrls": [""],
+    "tags": ["political", "culture"]
+  },
+  {
+    "id": "ales-makhnach",
+    "name": "Алесь Махнач",
+    "slug": "ales-makhnach",
+    "birthYear": 1941,
+    "deathYear": 1998,
+    "exilePeriods": [
+      { "startYear": 1980, "endYear": 1998, "locations": ["Масква", "Польшча", "ЗША (Нью-Ёрк)"] }
+    ],
+    "livedIn": ["Масква", "Польшча", "ЗША (Нью-Ёрк)"],
+    "activitiesInExile": "Гістарычныя даследаванні, культурная дзейнасць, беларуская дыяспарная работа.",
+    "reasonForExile": "Палітычныя абставіны ў СССР, неабходнасць выехаць з краіны.",
+    "returned": false,
+    "outcome": "Памёр у Нью-Ёрку ў 1998 годзе.",
+    "sourceUrls": [""],
+    "tags": ["culture", "science"]
+  },
+  {
+    "id": "liavon-yurevich",
+    "name": "Лявон Юрэвіч",
+    "slug": "liavon-yurevich",
+    "birthYear": 1954,
+    "exilePeriods": [
+      { "startYear": 1988, "endYear": null, "locations": ["ЗША (Нью-Джэрсі)"] }
+    ],
+    "livedIn": ["ЗША (Нью-Джэрсі)"],
+    "activitiesInExile": "Літаратурная творчасць, даследчыцкая дзейнасць, беларуская дыяспарная работа.",
+    "reasonForExile": "Палітычныя абставіны ў БССР у канцы 1980-х.",
+    "returned": false,
+    "outcome": "Працягвае жыць у эміграцыі ў Нью-Джэрсі.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "siarhey-navumchyk",
+    "name": "Сяргей Навумчык",
+    "slug": "siarhey-navumchyk",
+    "birthYear": 1961,
+    "exilePeriods": [
+      { "startYear": 1990, "endYear": null, "locations": ["ЗША"] }
+    ],
+    "livedIn": ["ЗША"],
+    "activitiesInExile": "Журналістыка, палітычная дзейнасць, дэпутацкая работа.",
+    "reasonForExile": "Палітычныя пераследы ў 1990-я, пачатак актыўнасці яшчэ ў БССР у 1980-я.",
+    "returned": false,
+    "outcome": "Працягвае жыць у эміграцыі ў ЗША.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "aliaksandr-nadsan",
+    "name": "Аляксандр Надсан",
+    "slug": "aliaksandr-nadsan",
+    "birthYear": 1926,
+    "deathYear": 2015,
+    "exilePeriods": [
+      { "startYear": 1960, "endYear": 2015, "locations": ["Польшча", "Вялікабрытанія (Лондан)"] }
+    ],
+    "livedIn": ["Польшча", "Вялікабрытанія (Лондан)"],
+    "activitiesInExile": "Каталіцкае святарства, кіраванне беларускай рэлігійнай грамадой на Захадзе, духоўная работа.",
+    "reasonForExile": "Паходжанне з Заходняй Беларусі, пасляваенныя абставіны, рэлігійная дзейнасць.",
+    "returned": false,
+    "outcome": "Стаў галоўным беларускім каталіцкім святаром на Захадзе, памёр у Лондане ў 2015 годзе.",
+    "sourceUrls": [""],
+    "tags": ["religious", "culture"]
+  },
+  {
+    "id": "zianon-pazniak",
+    "name": "Зянон Пазьняк",
+    "slug": "zianon-pazniak",
+    "birthYear": 1944,
+    "exilePeriods": [
+      { "startYear": 1996, "endYear": null, "locations": ["Польшча", "ЗША"] }
+    ],
+    "livedIn": ["Польшча", "ЗША"],
+    "activitiesInExile": "Палітычная дзейнасць як глава КХП-БНФ, археалагічныя даследаванні, грамадская работа.",
+    "reasonForExile": "Пагроза арэшту ў 1996 годзе пасля палітычнай дзейнасці і адкрыцця Курапат.",
+    "returned": false,
+    "outcome": "Працягвае жыць у эміграцыі, кіруе Кансерватыўна-Хрысціянскай партыяй БНФ.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "siarhey-navumchyk-96",
+    "name": "Сяргей Навумчык",
+    "slug": "siarhey-navumchyk-96",
+    "birthYear": 1961,
+    "exilePeriods": [
+      { "startYear": 1996, "endYear": null, "locations": ["ЗША (Нью-Джэрсі)"] }
+    ],
+    "livedIn": ["ЗША (Нью-Джэрсі)"],
+    "activitiesInExile": "Журналістыка ў 'Радыё Свабода', палітычная дзейнасць у эміграцыі.",
+    "reasonForExile": "Выехаў разам з Зянонам Пазьнякам у 1996 годзе пасля палітычных пераследаў.",
+    "returned": false,
+    "outcome": "Працягвае работу журналістам у 'Радыё Свабода', жыве ў Нью-Джэрсі.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "andrey-sannikau-2000",
+    "name": "Андрэй Саннікаў",
+    "slug": "andrey-sannikau-2000",
+    "birthYear": 1954,
+    "exilePeriods": [
+      { "startYear": 2000, "endYear": null, "locations": ["Польшча", "Вялікабрытанія"] }
+    ],
+    "livedIn": ["Польшча", "Вялікабрытанія"],
+    "activitiesInExile": "Дыпламатычная і палітычная дзейнасць, правозащытная работа.",
+    "reasonForExile": "Палітычныя пераследы, асабліва пасля лідэрства ў 'Хартыі'97' і прэзідэнцкай кампаніі.",
+    "returned": false,
+    "outcome": "Працягвае палітычную дзейнасць у эміграцыі.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "iryna-khalip",
+    "name": "Ірына Халіп",
+    "slug": "iryna-khalip",
+    "birthYear": 1967,
+    "exilePeriods": [
+      { "startYear": 2000, "endYear": null, "locations": ["Польшча", "Лондан"] }
+    ],
+    "livedIn": ["Польшча", "Лондан"],
+    "activitiesInExile": "Журналістыка, правозащытная дзейнасць.",
+    "reasonForExile": "Пастаяннае ціск з боку ўладаў, палітычныя пераследы як жонкі Андрэя Саннікава.",
+    "returned": true,
+    "outcome": "Частка часу праводзіць у эміграцыі, частка ў Беларусі, актыўна працуе журналісткай.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "ales-bialiatski",
+    "name": "Алесь Бяляцкі",
+    "slug": "ales-bialiatski",
+    "birthYear": 1962,
+    "exilePeriods": [
+      { "startYear": 2000, "endYear": 2020, "locations": ["Літва (Вільнюс)", "Польшча"] }
+    ],
+    "livedIn": ["Літва (Вільнюс)", "Польшча"],
+    "activitiesInExile": "Правозащытная дзейнасць, кіраванне цэнтрам 'Вясна'.",
+    "reasonForExile": "Палітычныя пераследы за правозащытную дзейнасць.",
+    "returned": true,
+    "outcome": "Нобелеўскі лаўрэат Міру (2022), у цяперашні час у турме ў Беларусі.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "siarhey-dubavets",
+    "name": "Сяргей Дубавец",
+    "slug": "siarhey-dubavets",
+    "birthYear": 1959,
+    "exilePeriods": [
+      { "startYear": 1990, "endYear": null, "locations": ["Літва (Вільнюс)"] }
+    ],
+    "livedIn": ["Літва (Вільнюс)"],
+    "activitiesInExile": "Журналістыка ў Беларускім Доме друку і 'Радыё Свабода', эсэістыка.",
+    "reasonForExile": "Пошук лепшых умоваў для незалежнай журналістыкі і беларускай культурнай дзейнасці.",
+    "returned": false,
+    "outcome": "Працягвае жыць і працаваць у Вільнюсе.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "sviatlana-aleksievich",
+    "name": "Сьвятлана Алексіевіч",
+    "slug": "sviatlana-aleksievich",
+    "birthYear": 1948,
+    "exilePeriods": [
+      { "startYear": 2000, "endYear": null, "locations": ["Германія", "Італія", "Францыя"] }
+    ],
+    "livedIn": ["Германія", "Італія", "Францыя"],
+    "activitiesInExile": "Літаратурная творчасць, публіцыстыка.",
+    "reasonForExile": "Ціск з боку ўладаў пасля крытыкі рэжыму ў сваіх творах.",
+    "returned": true,
+    "outcome": "Нобелеўская лаўрэатка па літаратуры (2015), жыве паміж Беларуссю і Германіяй.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "ales-mikhalevich",
+    "name": "Алесь Міхалевіч",
+    "slug": "ales-mikhalevich",
+    "birthYear": 1975,
+    "exilePeriods": [
+      { "startYear": 2011, "endYear": null, "locations": ["Чэхія"] }
+    ],
+    "livedIn": ["Чэхія"],
+    "activitiesInExile": "Палітычная дзейнасць, грамадская работа.",
+    "reasonForExile": "Катаванні КДБ пасля прэзідэнцкай кампаніі 2010 года.",
+    "returned": false,
+    "outcome": "Працягвае палітычную дзейнасць у эміграцыі ў Чэхіі.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "pavel-sheremet",
+    "name": "Павел Шэрэмэт",
+    "slug": "pavel-sheremet",
+    "birthYear": 1971,
+    "deathYear": 2016,
+    "exilePeriods": [
+      { "startYear": 1990, "endYear": 2016, "locations": ["Расія (Масква)", "Украіна (Кіеў)"] }
+    ],
+    "livedIn": ["Расія (Масква)", "Украіна (Кіеў)"],
+    "activitiesInExile": "Журналістыка, тэлевізійная дзейнасць.",
+    "reasonForExile": "Пошук лепшых прафесійных магчымасцей у журналістыцы.",
+    "returned": false,
+    "outcome": "Загінуў у выніку забойства ў Кіеве ў 2016 годзе.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "andrey-khadanovich",
+    "name": "Андрэй Хадановіч",
+    "slug": "andrey-khadanovich",
+    "birthYear": 1973,
+    "exilePeriods": [
+      { "startYear": 1998, "endYear": null, "locations": ["Польшча", "Францыя"] }
+    ],
+    "livedIn": ["Польшча", "Францыя"],
+    "activitiesInExile": "Паэтычная творчасць, перакладчыцкая дзейнасць, літаратурная работа.",
+    "reasonForExile": "Пошук лепшых умоваў для творчай дзейнасці і незалежнасці.",
+    "returned": true,
+    "outcome": "Жыве паміж Беларуссю і эміграцыяй, працягвае паэтычную творчасць.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "siarhey-sieriega",
+    "name": "Сяргей (Серёга)",
+    "slug": "siarhey-sieriega",
+    "birthYear": 1989,
+    "exilePeriods": [
+      { "startYear": 2020, "endYear": 2022, "locations": ["Украіна"] }
+    ],
+    "livedIn": ["Украіна"],
+    "activitiesInExile": "Музычная творчасць, канцэрты.",
+    "reasonForExile": "Палітычныя абставіны пасля 2020 года ў Беларусі.",
+    "returned": true,
+    "outcome": "Вярнуўся ў Беларусь у 2022 годзе.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "iowa-group",
+    "name": "Група IOWA",
+    "slug": "iowa-group",
+    "birthYear": 2009,
+    "exilePeriods": [
+      { "startYear": 2020, "endYear": null, "locations": ["Расія"] }
+    ],
+    "livedIn": ["Расія"],
+    "activitiesInExile": "Музычная творчасць, канцэрты, запіс альбомаў.",
+    "reasonForExile": "Палітычныя абставіны пасля 2020 года ў Беларусі.",
+    "returned": false,
+    "outcome": "Працягвае музычную дзейнасць у Расіі.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
+  },
+  {
+    "id": "maksim-mirny",
+    "name": "Максім Мірны",
+    "slug": "maksim-mirny",
+    "birthYear": 1977,
+    "exilePeriods": [
+      { "startYear": 2000, "endYear": null, "locations": ["ЗША"] }
+    ],
+    "livedIn": ["ЗША"],
+    "activitiesInExile": "Прафесійны тэніс, трэнерская дзейнасць.",
+    "reasonForExile": "Прафесійная спартовая кар'ера, неабходнасць жыць у ЗША для тэнісу.",
+    "returned": false,
+    "outcome": "Працягвае жыць у ЗША, трэнерская дзейнасць.",
+    "sourceUrls": [""],
+    "tags": ["sports"]
+  },
+  {
+    "id": "aryna-sabalenka",
+    "name": "Арына Сабаленка",
+    "slug": "aryna-sabalenka",
+    "birthYear": 1998,
+    "exilePeriods": [
+      { "startYear": 2020, "endYear": null, "locations": ["ЗША", "Еўропа"] }
+    ],
+    "livedIn": ["ЗША", "Еўропа"],
+    "activitiesInExile": "Прафесійны тэніс, турніры WTA.",
+    "reasonForExile": "Палітычныя абставіны пасля 2020 года, прафесійная спартовая кар'ера.",
+    "returned": false,
+    "outcome": "Першая ракетка свету, працягвае прафесійную кар'еру за мяжой.",
+    "sourceUrls": [""],
+    "tags": ["sports"]
+  },
+  {
+    "id": "nikolai-khalezin",
+    "name": "Мікалай Халезін",
+    "slug": "nikolai-khalezin",
+    "birthYear": 1971,
+    "exilePeriods": [
+      { "startYear": 2010, "endYear": null, "locations": ["Вялікабрытанія", "ЗША", "Еўропа"] }
+    ],
+    "livedIn": ["Вялікабрытанія", "ЗША", "Еўропа"],
+    "activitiesInExile": "Тэатральная рэжысура, кіраванне БТ 'Свабодны тэатр', міжнародныя пастаноўкі.",
+    "reasonForExile": "Палітычныя пераследы за незалежную тэатральную дзейнасць.",
+    "returned": false,
+    "outcome": "Працягвае міжнародную тэатральную дзейнасць.",
+    "sourceUrls": [""],
+    "tags": ["culture", "political"]
+  },
+  {
+    "id": "natalia-koliada",
+    "name": "Наталля Коляда",
+    "slug": "natalia-koliada",
+    "birthYear": 1971,
+    "exilePeriods": [
+      { "startYear": 2010, "endYear": null, "locations": ["Вялікабрытанія", "ЗША", "Еўропа"] }
+    ],
+    "livedIn": ["Вялікабрытанія", "ЗША", "Еўропа"],
+    "activitiesInExile": "Тэатральная дзейнасць, кіраванне БТ 'Свабодны тэатр', міжнародныя праекты.",
+    "reasonForExile": "Палітычныя пераследы за незалежную тэатральную дзейнасць.",
+    "returned": false,
+    "outcome": "Працягвае міжнародную тэатральную дзейнасць разам з мужам.",
+    "sourceUrls": [""],
+    "tags": ["culture", "political"]
+  },
+  {
+    "id": "siarhey-dorofeev",
+    "name": "Сяргей Дарафееў",
+    "slug": "siarhey-dorofeev",
+    "birthYear": 1975,
+    "exilePeriods": [
+      { "startYear": 2020, "endYear": null, "locations": ["Літва", "Польшча"] }
+    ],
+    "livedIn": ["Літва", "Польшча"],
+    "activitiesInExile": "Журналістыка, тэлевізійная дзейнасць, незалежныя медыя.",
+    "reasonForExile": "Палітычныя пераследы пасля 2020 года за журналісцкую дзейнасць.",
+    "returned": false,
+    "outcome": "Працягвае журналісцкую дзейнасць у эміграцыі.",
+    "sourceUrls": [""],
+    "tags": ["political"]
+  },
+  {
+    "id": "superbesy-group",
+    "name": "Група Superbesy",
+    "slug": "superbesy-group",
+    "birthYear": 2014,
+    "exilePeriods": [
+      { "startYear": 2018, "endYear": null, "locations": ["Германія"] }
+    ],
+    "livedIn": ["Германія"],
+    "activitiesInExile": "Панк-музыка, канцэрты, запіс альбомаў, міжнародныя турнэ.",
+    "reasonForExile": "Пошук лепшых магчымасцей для музычнай кар'еры, палітычныя абставіны ў Беларусі.",
+    "returned": false,
+    "outcome": "Працягвае актыўную музычную дзейнасць у Германіі, міжнародныя канцэрты.",
+    "sourceUrls": [""],
+    "tags": ["culture"]
   }
 ]
 

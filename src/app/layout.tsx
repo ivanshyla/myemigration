@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientRoot from "./ClientRoot";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +21,15 @@ export const metadata: Metadata = {
   },
   description:
     "Сайт-арта-лічыльнік: уводзіш дату адʼезду — атрымліваеш колькасць дзён і блізкі гістарычны прыклад.",
+            icons: {
+            icon: [
+              { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
+              { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+              { url: "/favicon.ico", sizes: "16x16", type: "image/x-icon" },
+            ],
+            shortcut: "/favicon.ico",
+            apple: "/favicon.ico",
+          },
   openGraph: {
     title: "Белэміграцыя",
     description:
@@ -42,7 +52,7 @@ export const metadata: Metadata = {
   },
   metadataBase:
     typeof window === "undefined"
-      ? new URL("https://myemigration.app")
+      ? new URL(process.env.NODE_ENV === "production" ? "https://myemigration.app" : "http://localhost:3004")
       : undefined,
 };
 
@@ -53,8 +63,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="be">
+      <head>
+        <link rel="icon" href="/belarus-outline.jpg?v=2" type="image/jpeg" />
+        <link rel="shortcut icon" href="/belarus-outline.jpg?v=2" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/belarus-outline.jpg?v=2" type="image/jpeg" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ClientRoot>{children}</ClientRoot>
+        <ClientRoot>
+          <header className="sticky top-0 z-10 backdrop-blur bg-white/40 border-b border-black/5">
+            <div className="mx-auto max-w-3xl px-4 sm:px-6 py-2 sm:py-3 flex items-center gap-2 sm:gap-3">
+              <Image src="/belarus-outline.jpg" alt="Белэміграцыя" width={20} height={20} className="sm:w-6 sm:h-6 rounded-sm" />
+              <span className="text-xs sm:text-sm font-medium">Белэміграцыя</span>
+            </div>
+          </header>
+          {children}
+        </ClientRoot>
       </body>
     </html>
   );

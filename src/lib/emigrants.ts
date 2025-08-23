@@ -28,27 +28,13 @@ export const EMIGRANTS: EmigrantProfile[] = [
     sourceUrl: "https://be.wikipedia.org/wiki/%D0%AF%D0%BA%D1%83%D0%B1_%D0%9A%D0%BE%D0%BB%D0%B0%D1%81",
   },
   {
-    id: "svetlana-alexievich",
-    name: "Святлана Алексіевіч",
-    slug: "svetlana-alexievich",
-    portraitEmoji: "🎖️",
-    // Жыла па-за Беларуссю працяглы час; вярталася і зʼязджала. Бярэм доўгі адрэзак як прыблізны арыенцір.
-    // Арыентыровачна 2000–2011 (з паўторнымі адʼездамі пасля 2020).
-    startYear: 2000,
-    endYear: 2011,
-    returned: true,
-    blurb:
-      "Твая дарога нагадвае Святлану Алексіевіч: доўгі шлях па-за домам і вялікія тэксты пра нашу памяць.",
-    sourceUrl: "https://be.wikipedia.org/wiki/%D0%A1%D0%B2%D1%8F%D1%82%D0%BB%D0%B0%D0%BD%D0%B0_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D0%B5%D0%B2%D1%96%D1%87",
-  },
-  {
     id: "zianon-pazniak",
     name: "Зянон Пазьняк",
     slug: "zianon-pazniak",
     portraitEmoji: "🚶",
     startYear: 1996,
     endYear: null, // у эміграцыі многія гады
-    durationDaysEstimate: (2025 - 1996) * 365, // грубая ацэнка на сёння
+    durationDaysEstimate: (2020 - 1996) * 365, // используем 2020 как конечный год
     returned: false,
     blurb:
       "Па працягласці гэта блізка да Зянона Пазьняка — доўгая эміграцыя і пасьлядоўная пазіцыя.",
@@ -67,8 +53,14 @@ export function estimateDurationDays(profile: EmigrantProfile): number {
   if (typeof profile.durationDaysEstimate === "number") {
     return profile.durationDaysEstimate;
   }
-  if (profile.startYear && (profile.endYear || profile.endYear === 0)) {
-    const years = (profile.endYear ?? new Date().getFullYear()) - profile.startYear;
+  if (profile.startYear && profile.endYear) {
+    const years = profile.endYear - profile.startYear;
+    return Math.max(0, Math.round(years * 365.25));
+  }
+  if (profile.startYear && !profile.endYear) {
+    // Для тех, кто до сих пор в эмиграции, считаем до текущего года
+    const currentYear = new Date().getFullYear();
+    const years = currentYear - profile.startYear;
     return Math.max(0, Math.round(years * 365.25));
   }
   return 0;
@@ -86,6 +78,28 @@ export function findNearestByDays(daysInExile: number): EmigrantProfile {
     }
   }
   return best;
+}
+
+export function rankByDays(daysInExile: number, max: number = ALL_EMIGRANTS.length): EmigrantProfile[] {
+  const pool = ALL_EMIGRANTS.length ? ALL_EMIGRANTS : EMIGRANTS;
+  return [...pool]
+    .map((p) => ({ 
+      p, 
+      d: Math.abs(estimateDurationDays(p) - daysInExile),
+      // Приоритет историческим эмигрантам (до 2020) + Калесникова как особый случай
+      // Но исключаем Зянона Позняка - он должен быть обычной карточкой
+      isHistorical: ((p.startYear || 2020) < 2020 || p.slug === "maria-kalesnikava") && p.slug !== "zianon-pazniak"
+    }))
+    .sort((a, b) => {
+      // Сначала сортируем по историчности (исторические идут первыми)
+      if (a.isHistorical !== b.isHistorical) {
+        return b.isHistorical ? 1 : -1;
+      }
+      // Затем по близости дней
+      return a.d - b.d;
+    })
+    .slice(0, Math.max(1, Math.min(max, pool.length)))
+    .map((x) => x.p);
 }
 
 
