@@ -62,13 +62,50 @@ export async function POST(req: NextRequest) {
     if (!Number.isFinite(days) || days < 0 || days > 100000) {
       return new Response(JSON.stringify({ error: "invalid days" }), { status: 400 });
     }
+    // Daily unique guard based on cookie uid
+    const cookieName = "me_uid";
+    let uid = req.cookies.get(cookieName)?.value;
+    let setCookieHeader: string | null = null;
+    if (!uid) {
+      uid = crypto.randomUUID();
+      // 1 year
+      setCookieHeader = `${cookieName}=${uid}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`;
+    }
+
+    // If KV доступен, используем ключ с TTL сутки и NX, чтобы не инкрементировать повторно
+    if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+      const today = new Date();
+      const y = today.getUTCFullYear();
+      const m = String(today.getUTCMonth() + 1).padStart(2, "0");
+      const d = String(today.getUTCDate()).padStart(2, "0");
+      const seenKey = `stats:seen:${uid}:${y}${m}${d}`;
+      // nx: true — только если ключ не существует; ex: сутки
+      const setRes = await kv.set(seenKey, "1", { ex: 60 * 60 * 24, nx: true });
+      const current = await readStats();
+      let next = current;
+      if (setRes === "OK") {
+        next = { count: current.count + 1, totalDays: current.totalDays + Math.round(days) };
+        await writeStats(next);
+      }
+      const avg = next.count > 0 ? Math.round(next.totalDays / next.count) : 0;
+      const headers = new Headers({ "content-type": "application/json" });
+      if (setCookieHeader) headers.append("Set-Cookie", setCookieHeader);
+      return new Response(
+        JSON.stringify({ count: next.count, totalDays: next.totalDays, averageDays: avg }),
+        { headers }
+      );
+    }
+
+    // Файловый режим (локально): инкрементируем всегда
     const prev = await readStats();
     const next: Stats = { count: prev.count + 1, totalDays: prev.totalDays + Math.round(days) };
     await writeStats(next);
     const avg = Math.round(next.totalDays / next.count);
+    const headers = new Headers({ "content-type": "application/json" });
+    if (setCookieHeader) headers.append("Set-Cookie", setCookieHeader);
     return new Response(
       JSON.stringify({ count: next.count, totalDays: next.totalDays, averageDays: avg }),
-      { headers: { "content-type": "application/json" } }
+      { headers }
     );
   } catch (e) {
     return new Response(JSON.stringify({ error: "bad request" }), { status: 400 });
