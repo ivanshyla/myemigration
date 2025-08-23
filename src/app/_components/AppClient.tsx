@@ -209,9 +209,6 @@ export default function AppClient({ initialDate }: Props) {
             {/* alt archive card removed per request */}
 
             <div className="mt-6 flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3">
-              <a className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto" href={result.ig} target="_blank" rel="noopener noreferrer">
-                📱 Картка для Instagram
-              </a>
               <a
                 className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(result.text)}&url=${encodeURIComponent(result.shareUrl)}`}
@@ -219,14 +216,6 @@ export default function AppClient({ initialDate }: Props) {
                 rel="noopener noreferrer"
               >
                 𝕏 Tweet
-              </a>
-              <a
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(result.shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
               </a>
               <a
                 className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
