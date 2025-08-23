@@ -14,6 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Base URL for absolute OpenGraph/Twitter images
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
 export const metadata: Metadata = {
   title: {
     default: "Белэміграцыя — колькі дзён ты ўжо па-за домам?",
@@ -37,7 +42,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/api/og",
+        url: `${baseUrl}/api/og`,
         width: 1200,
         height: 630,
       },
@@ -48,12 +53,9 @@ export const metadata: Metadata = {
     title: "Белэміграцыя",
     description:
       "Колькі дзён у эміграцыі і гістарычны матчынг па прыкладзе беларускіх дзеячаў.",
-    images: ["/api/og"],
+    images: [`${baseUrl}/api/og`],
   },
-  metadataBase:
-    typeof window === "undefined"
-      ? new URL(process.env.NODE_ENV === "production" ? "https://myemigration.app" : "http://localhost:3004")
-      : undefined,
+  metadataBase: new URL(baseUrl),
 };
 
 export default function RootLayout({
