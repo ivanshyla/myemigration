@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+const defaultOg = `${baseUrl}/photos/art-belarus-minsk-by-katia-syrayezhkina-scaled%20copy.jpg`;
 
 export const metadata: Metadata = {
   title: {
@@ -40,20 +41,14 @@ export const metadata: Metadata = {
     description:
       "Колькі дзён у эміграцыі і хто з беларускіх дзеячаў мае падобны лёс?",
     type: "website",
-    images: [
-      {
-        url: `${baseUrl}/api/og`,
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [{ url: defaultOg, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Белэміграцыя",
     description:
       "Колькі дзён у эміграцыі і гістарычны матчынг па прыкладзе беларускіх дзеячаў.",
-    images: [`${baseUrl}/api/og`],
+    images: [defaultOg],
   },
   metadataBase: new URL(baseUrl),
 };
