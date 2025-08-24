@@ -19,7 +19,7 @@ const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
 // Use a simple JPEG without spaces in the name to satisfy FB/X scrapers
-const defaultOg = `${baseUrl}/og.jpg`;
+const defaultOg = `${baseUrl}/og-simple.jpg`;
 
 export const metadata: Metadata = {
   title: {
