@@ -21,6 +21,17 @@ export function differenceInDays(from: Date, to: Date): number {
 
 export function buildMessage(startDate: Date, nearestOverride?: EmigrantProfile, userDays?: number) {
   const days = userDays ?? differenceInDays(startDate, new Date());
+  
+  // Специальное сообщение для 0 дней
+  if (days === 0) {
+    const text = "Вы як і большасць беларусаў, жывеце дома. І гэта таксама добра";
+    const sub = "Калі вы хочаце паспрабаваць, увядзіце дату ад'езду ў будучыні або ў мінулым";
+    const params = new URLSearchParams({ q: text, sub });
+    const og = `/api/og?${params.toString()}`;
+    const ig = `/api/ig?${params.toString()}`;
+    return { days, nearest: null, text, sub, og, ig };
+  }
+  
   const nearest = nearestOverride ?? findNearestByDays(days);
   const daysStr = `${formatNumber(days)} ${pluralDays(days)}`;
   const text = `Я ў эміграцыі ${daysStr}, гэта прыблізна як ${nearest.name}.`;

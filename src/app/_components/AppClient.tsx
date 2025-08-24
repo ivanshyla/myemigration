@@ -194,11 +194,11 @@ export default function AppClient({ initialDate }: Props) {
             <ArchiveCard
               title={result.text}
               body={result.sub}
-              caption={result.nearest.name}
+              caption={result.nearest?.name || ""}
             />
             
-            {/* Альтернативный эмигрант (кликабельная ссылка) */}
-            {result.secondary ? (
+            {/* Альтернативный эмигрант (кликабельная ссылка) - показываем только если есть nearest */}
+            {result.nearest && result.secondary ? (
               <div className="mt-6">
                 <button 
                   onClick={() => {
@@ -216,40 +216,52 @@ export default function AppClient({ initialDate }: Props) {
 
             {/* alt archive card removed per request */}
 
-            <div className="mt-6 flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3">
-              <a
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(result.text)}&url=${encodeURIComponent(result.shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                𝕏 Tweet
-              </a>
-              <a
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
-                href={`https://threads.net/intent/post?text=${encodeURIComponent(result.text)}%20${encodeURIComponent(result.shareUrl)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Threads
-              </a>
-              <a
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
-                href="/change"
-              >
-                Я хачу гэта змяніць
-              </a>
-              <button
-                className="inline-flex items-center justify-center gap-2 border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
-                onClick={async () => {
-                  try {
-                    await navigator.share?.({ text: result.text, url: result.shareUrl });
-                  } catch {}
-                }}
-              >
-                📲 Share
-              </button>
-            </div>
+            {/* Кнопки шаринга - показываем только если есть nearest */}
+            {result.nearest ? (
+              <div className="mt-6 flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3">
+                <a
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(result.text)}&url=${encodeURIComponent(result.shareUrl)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  𝕏 Tweet
+                </a>
+                <a
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
+                  href={`https://threads.net/intent/post?text=${encodeURIComponent(result.text)}%20${encodeURIComponent(result.shareUrl)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Threads
+                </a>
+                <a
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
+                  href="/change"
+                >
+                  Я хачу гэта змяніць
+                </a>
+                <button
+                  className="inline-flex items-center justify-center gap-2 border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
+                  onClick={async () => {
+                    try {
+                      await navigator.share?.({ text: result.text, url: result.shareUrl });
+                    } catch {}
+                  }}
+                >
+                  📲 Share
+                </button>
+              </div>
+            ) : (
+              <div className="mt-6">
+                <a
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-black/10 px-3 sm:px-4 py-2 hover:bg-black/5 text-sm sm:text-base w-full sm:w-auto"
+                  href="/change"
+                >
+                  Я хачу гэта змяніць
+                </a>
+              </div>
+            )}
 
             <div className="mt-6 sm:mt-8 text-xs sm:text-sm opacity-70">
               Дадзеныя гістарычныя — прыблізныя для гульнёвага супастаўленьня. Дапрашайцеся ўдакладненьняў і дасылайце новыя прыклады.
