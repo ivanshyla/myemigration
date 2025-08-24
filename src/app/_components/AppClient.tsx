@@ -31,6 +31,14 @@ export default function AppClient({ initialDate }: Props) {
     let primary = rankedNearest[0];
     let secondary = rankedNearest[1];
     
+    // Иногда показываем Рыгора Астапеню как альтернативу
+    if (Math.random() < 0.3 && rankedNearest.length > 2) { // 30% вероятность
+      const astapenia = rankedNearest.find(e => e.slug === "ryhor-astapenia");
+      if (astapenia) {
+        secondary = astapenia;
+      }
+    }
+    
     if (selectedEmigrantSlug) {
       const selectedEmigrant = rankedNearest.find(e => e.slug === selectedEmigrantSlug);
       if (selectedEmigrant) {
