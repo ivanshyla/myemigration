@@ -42,7 +42,12 @@ export const metadata: Metadata = {
     description:
       "Колькі дзён у эміграцыі і хто з беларускіх дзеячаў мае падобны лёс?",
     type: "website",
-    images: [{ url: defaultOg, width: 1200, height: 630 }],
+    images: [{ 
+      url: defaultOg, 
+      width: 600, 
+      height: 315,
+      type: "image/jpeg"
+    }],
   },
   twitter: {
     card: "summary_large_image",
@@ -65,6 +70,12 @@ export default function RootLayout({
         <link rel="icon" href="/belarus-outline.jpg?v=2" type="image/jpeg" />
         <link rel="shortcut icon" href="/belarus-outline.jpg?v=2" type="image/jpeg" />
         <link rel="apple-touch-icon" href="/belarus-outline.jpg?v=2" type="image/jpeg" />
+        
+        {/* Explicit OpenGraph image metadata for Facebook compatibility */}
+        <meta property="og:image" content={defaultOg} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ClientRoot>
