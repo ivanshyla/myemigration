@@ -32,6 +32,17 @@ export function buildMessage(startDate: Date, nearestOverride?: EmigrantProfile,
     return { days, nearest: null, text, sub, og, ig };
   }
   
+  // Проверяем, не слишком ли старая дата (больше 75 лет)
+  const maxDays = 75 * 365; // 75 лет в днях
+  if (days > maxDays) {
+    const text = "Дата занадта старая для гэтага тэсту";
+    const sub = "Калі ласка, увядзіце дату не раней за 1950 год. Гэта дасць больш дакладныя вынікі.";
+    const params = new URLSearchParams({ q: text, sub });
+    const og = `/api/og?${params.toString()}`;
+    const ig = `/api/ig?${params.toString()}`;
+    return { days, nearest: null, text, sub, og, ig };
+  }
+  
   const nearest = nearestOverride ?? findNearestByDays(days);
   const daysStr = `${formatNumber(days)} ${pluralDays(days)}`;
   const text = `Я ў эміграцыі ${daysStr}, гэта прыблізна як ${nearest.name}.`;

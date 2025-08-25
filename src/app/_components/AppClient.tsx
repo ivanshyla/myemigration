@@ -113,6 +113,21 @@ export default function AppClient({ initialDate }: Props) {
       const day = startDay.padStart(2, '0');
       const month = startMonth.padStart(2, '0');
       const year = startYear;
+      
+      // Валидация: ограничиваем год до 1950 (75 лет назад от 2025)
+      const currentYear = new Date().getFullYear();
+      const minYear = 1950;
+      const maxYear = currentYear;
+      
+      if (parseInt(year) < minYear) {
+        setStartYear(minYear.toString());
+        return;
+      }
+      if (parseInt(year) > maxYear) {
+        setStartYear(maxYear.toString());
+        return;
+      }
+      
       setStart(`${year}-${month}-${day}`);
     }
   }, [startDay, startMonth, startYear]);
@@ -138,7 +153,7 @@ export default function AppClient({ initialDate }: Props) {
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
             <div className="w-full sm:w-auto">
-              <label className="block text-sm opacity-70 mb-2">Дата адʼезду</label>
+              <label className="block text-sm opacity-70 mb-2">Дата адʼезду (1950-2025)</label>
               <div className="flex gap-2">
                 <div className="flex flex-col items-center">
                   <input
