@@ -39,6 +39,16 @@ export default function AppClient({ initialDate }: Props) {
         secondary = astapenia;
       }
     }
+
+    // Реже показываем Якуба Коласа: если он первый, в 70% случаев берём следующего ближайшего
+    if (primary?.slug === "yakub-kolas" && rankedNearest.length > 1) {
+      if (Math.random() < 0.7) {
+        const next = rankedNearest[1];
+        primary = next;
+        // вторичным делаем кого-то, отличного от primary; если возможно — самого Коласа
+        secondary = rankedNearest.find(e => e.slug !== primary.slug) || rankedNearest[0];
+      }
+    }
     
     if (selectedEmigrantSlug) {
       const selectedEmigrant = rankedNearest.find(e => e.slug === selectedEmigrantSlug);
