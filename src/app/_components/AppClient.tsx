@@ -13,6 +13,7 @@ export default function AppClient({ initialDate }: Props) {
   const [startDay, setStartDay] = useState<string>("");
   const [startMonth, setStartMonth] = useState<string>("");
   const [startYear, setStartYear] = useState<string>("");
+  const displayCurrentYear = new Date().getFullYear();
   const [activity] = useState("");
   const [reason] = useState("");
   const [where] = useState("");
@@ -110,11 +111,15 @@ export default function AppClient({ initialDate }: Props) {
   // Обновляем основное состояние start при изменении отдельных полей
   useEffect(() => {
     if (startDay && startMonth && startYear) {
+      // Ждём, пока год будет полностью введён (4 цифры), чтобы не клампить преждевременно
+      if (!/^\d{4}$/.test(startYear)) {
+        return;
+      }
       const day = startDay.padStart(2, '0');
       const month = startMonth.padStart(2, '0');
       const year = startYear;
       
-      // Валидация: ограничиваем год до 1950 (75 лет назад от 2025)
+      // Валидация: год не ранее 1950 и не позже текущего года
       const currentYear = new Date().getFullYear();
       const minYear = 1950;
       const maxYear = currentYear;
@@ -153,7 +158,7 @@ export default function AppClient({ initialDate }: Props) {
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
             <div className="w-full sm:w-auto">
-              <label className="block text-sm opacity-70 mb-2">Дата адʼезду (1950-2025)</label>
+              <label className="block text-sm opacity-70 mb-2">Дата адʼезду (1950-{displayCurrentYear})</label>
               <div className="flex gap-2">
                 <div className="flex flex-col items-center">
                   <input
@@ -187,22 +192,6 @@ export default function AppClient({ initialDate }: Props) {
                 </div>
               </div>
             </div>
-          
-                   {avg ? (
-           <div className="w-full sm:w-[420px] rounded-lg border border-black/10 p-4 bg-white/70 text-left">
-                         <div className="text-sm opacity-70">Сярэдні новы эмігрант з&apos;ехаў з Беларусі:</div>
-            <div className="text-xl font-semibold text-blue-600">{Math.floor(avg.averageDays).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} дзён</div>
-            <div className="mt-3 flex items-baseline gap-2">
-              <div className="text-sm opacity-70">Колькі нас</div>
-              <div className="text-lg font-medium">{avg.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</div>
-            </div>
-           </div>
-         ) : (
-            <div className="w-full sm:w-auto text-center sm:text-left">
-              <div className="text-sm opacity-60">Загрузка статыстыкі...</div>
-            </div>
-          )}
-        </div>
 
         {result ? (
           <section className="mt-10">
@@ -283,6 +272,24 @@ export default function AppClient({ initialDate }: Props) {
             </div>
           </section>
         ) : null}
+
+        {/* Глобальная статыстыка — в самом низу контента */}
+        <div className="mt-10 sm:mt-12">
+          {avg ? (
+            <div className="w-full sm:w-[420px] rounded-lg border border-black/10 p-4 bg-white/70 text-left">
+              <div className="text-sm opacity-70">Сярэдняя лічба для ўсіх людзей, якія прайшлі гэты тэст</div>
+              <div className="text-xl font-semibold text-blue-600">{Math.floor(avg.averageDays).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} дзён</div>
+              <div className="mt-3 flex items-baseline gap-2">
+                <div className="text-sm opacity-70">Колькі нас</div>
+                <div className="text-lg font-medium">{avg.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</div>
+              </div>
+            </div>
+          ) : (
+            <div className="w-full sm:w-auto text-center sm:text-left">
+              <div className="text-sm opacity-60">Загрузка статыстыкі...</div>
+            </div>
+          )}
+        </div>
 
         <div className="mt-8 sm:mt-12 flex flex-col gap-2">
           <div className="opacity-70 text-xs sm:text-sm">Вайб-кодзінг Іван Шыла, 2025</div>
