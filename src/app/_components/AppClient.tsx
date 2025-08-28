@@ -192,6 +192,7 @@ export default function AppClient({ initialDate }: Props) {
                 </div>
               </div>
             </div>
+          </div>
 
         {result ? (
           <section className="mt-10">
