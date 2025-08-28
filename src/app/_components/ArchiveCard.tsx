@@ -23,8 +23,8 @@ export default function ArchiveCard({ title, body, photoUrl, caption }: Props) {
       <span className="absolute w-2 h-2 rounded-full bg-black/20 left-2 bottom-2" />
       <span className="absolute w-2 h-2 rounded-full bg-black/20 right-2 bottom-2" />
 
-      <div className="px-3 sm:px-5 py-3 sm:py-4 border-b border-black/10 text-[11px] sm:text-[12px] tracking-wider uppercase text-black/60">
-        📋 Архіўная картка
+      <div className="px-3 sm:px-5 py-3 sm:py-4 border-b border-black/10 text-[11px] sm:text-[12px] tracking-wider text-black/60">
+        Ваш вынік
       </div>
 
       <div className="p-3 sm:p-5 flex flex-col sm:flex-row gap-3 sm:gap-5 items-center sm:items-start">
