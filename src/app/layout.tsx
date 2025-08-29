@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientRoot from "./ClientRoot";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -89,6 +90,7 @@ export default function RootLayout({
           {children}
         </ClientRoot>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
