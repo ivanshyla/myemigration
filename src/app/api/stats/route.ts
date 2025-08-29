@@ -62,6 +62,12 @@ export async function POST(req: NextRequest) {
     if (!Number.isFinite(days) || days < 0 || days > 100000) {
       return new Response(JSON.stringify({ error: "invalid days" }), { status: 400 });
     }
+    // Для агрегации средней считаем только «новых» эмигрантов (2020+)
+    // Если дата отъезда раньше 2020-01-01, не включаем в среднюю
+    const now = new Date();
+    const cutoff = new Date("2020-01-01T00:00:00Z");
+    const maxEligibleDays = Math.max(0, Math.floor((now.getTime() - cutoff.getTime()) / (1000 * 60 * 60 * 24)));
+    const isEligibleForAverage = days <= maxEligibleDays;
     // Daily unique guard based on cookie uid
     const cookieName = "me_uid";
     let uid = req.cookies.get(cookieName)?.value;
@@ -84,8 +90,13 @@ export async function POST(req: NextRequest) {
       const current = await readStats();
       let next = current;
       if (setRes === "OK") {
-        next = { count: current.count + 1, totalDays: current.totalDays + Math.round(days) };
-        await writeStats(next);
+        if (isEligibleForAverage) {
+          next = { count: current.count + 1, totalDays: current.totalDays + Math.round(days) };
+          await writeStats(next);
+        } else {
+          // Не считаем в среднюю, но всё равно возвращаем текущие значения
+          next = current;
+        }
       }
       const avg = next.count > 0 ? Math.round(next.totalDays / next.count) : 0;
       const headers = new Headers({ "content-type": "application/json" });
@@ -98,8 +109,12 @@ export async function POST(req: NextRequest) {
 
     // Файловый режим (локально): инкрементируем всегда
     const prev = await readStats();
-    const next: Stats = { count: prev.count + 1, totalDays: prev.totalDays + Math.round(days) };
-    await writeStats(next);
+    const next: Stats = isEligibleForAverage
+      ? { count: prev.count + 1, totalDays: prev.totalDays + Math.round(days) }
+      : prev;
+    if (isEligibleForAverage) {
+      await writeStats(next);
+    }
     const avg = Math.round(next.totalDays / next.count);
     const headers = new Headers({ "content-type": "application/json" });
     if (setCookieHeader) headers.append("Set-Cookie", setCookieHeader);
