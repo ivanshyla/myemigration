@@ -7,6 +7,30 @@ type Stats = { count: number; totalDays: number };
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const STATS_PATH = path.join(DATA_DIR, "stats.json");
+const SEEN_DIR = path.join(DATA_DIR, "seen");
+
+function formatDateKeyUTC(d: Date): string {
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(d.getUTCDate()).padStart(2, "0");
+  return `${y}${m}${day}`;
+}
+
+async function hasSeenTodayFile(uid: string, dateKey: string): Promise<boolean> {
+  try {
+    const p = path.join(SEEN_DIR, `${uid}-${dateKey}`);
+    await fs.stat(p);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function markSeenTodayFile(uid: string, dateKey: string): Promise<void> {
+  await fs.mkdir(SEEN_DIR, { recursive: true });
+  const p = path.join(SEEN_DIR, `${uid}-${dateKey}`);
+  await fs.writeFile(p, "1", "utf8");
+}
 
 async function readStats(): Promise<Stats> {
   try {
@@ -107,15 +131,19 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Файловый режим (локально): инкрементируем всегда
+    // Файловый режим (локально): уникальность за день по cookie uid
     const prev = await readStats();
-    const next: Stats = isEligibleForAverage
-      ? { count: prev.count + 1, totalDays: prev.totalDays + Math.round(days) }
-      : prev;
-    if (isEligibleForAverage) {
+    const todayKey = formatDateKeyUTC(new Date());
+    const alreadySeen = uid ? await hasSeenTodayFile(uid, todayKey) : false;
+    let next: Stats = prev;
+    if (!alreadySeen && isEligibleForAverage) {
+      next = { count: prev.count + 1, totalDays: prev.totalDays + Math.round(days) };
       await writeStats(next);
     }
-    const avg = Math.round(next.totalDays / next.count);
+    if (!alreadySeen && uid) {
+      await markSeenTodayFile(uid, todayKey);
+    }
+    const avg = next.count > 0 ? Math.round(next.totalDays / next.count) : 0;
     const headers = new Headers({ "content-type": "application/json" });
     if (setCookieHeader) headers.append("Set-Cookie", setCookieHeader);
     return new Response(
