@@ -7,7 +7,21 @@ export async function GET(req: NextRequest) {
   const { searchParams, origin } = new URL(req.url);
   const q = (searchParams.get("q") || "").slice(0, 160);
   const sub = (searchParams.get("sub") || "").slice(0, 280);
-  const img = searchParams.get("img");
+  const rawImg = searchParams.get("img");
+  // Whitelist local images only under /photos or /brand; block external or path traversal
+  const img = (() => {
+    if (!rawImg) return null;
+    try {
+      const u = new URL(rawImg, origin);
+      const path = u.pathname || "";
+      if ((path.startsWith("/photos/") || path.startsWith("/brand/")) && !path.includes("..")) {
+        return path;
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  })();
   const cap = (searchParams.get("cap") || "").slice(0, 80);
   const simple = searchParams.get("simple");
 
